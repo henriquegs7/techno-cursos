@@ -1,5 +1,5 @@
 <script lang="ts">
-import fetchData from '@/mixins/fetchData.js'
+import fetchData from '../mixins/fetchData'
 
 export default {
   name: 'ContatoView',

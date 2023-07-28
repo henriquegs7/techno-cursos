@@ -1,5 +1,5 @@
 <script lang="ts">
-import HeaderComp from '@/components/HeaderComp.vue'
+import HeaderComp from './components/HeaderComp.vue'
 
 export default {
   components: { HeaderComp }

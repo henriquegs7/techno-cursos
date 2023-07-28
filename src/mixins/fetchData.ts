@@ -1,12 +1,14 @@
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   data() {
     return {
-      loading: true,
-      api: null
+      loading: true as boolean,
+      api: null as any
     }
   },
   methods: {
-    fetchData(url) {
+    fetchData(url: string): void {
       this.loading = true
       this.api = null
 
@@ -18,4 +20,4 @@ export default {
         })
     }
   }
-}
+})

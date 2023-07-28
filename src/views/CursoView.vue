@@ -1,14 +1,9 @@
 <script lang="ts">
-import fetchData from '@/mixins/fetchData.js'
+import fetchData from '../mixins/fetchData'
 
 export default {
   name: 'CursoView',
   props: ['curso'],
-  data() {
-    return {
-      cursoList: null
-    }
-  },
   mixins: [fetchData],
   created() {
     this.fetchData(`/curso/${this.curso}`)

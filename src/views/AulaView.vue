@@ -1,5 +1,5 @@
 <script lang="ts">
-import fetchData from '@/mixins/fetchData.js'
+import fetchData from '../mixins/fetchData'
 
 export default {
   name: 'AulaView',
@@ -8,7 +8,7 @@ export default {
   created() {
     this.fetchData(`/aula/${this.aula}`)
   },
-  beforeRouteUpdate(to, from, next) {
+  beforeRouteUpdate(to: any, from: any, next: any) {
     this.fetchData(`/aula/${to.params.aula}`)
     next()
   }
